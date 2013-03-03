@@ -27,4 +27,38 @@ public class Produto {
     @ManyToMany(mappedBy="", fetch=FetchType.EAGER)
     private Estoque estoque;
     //TODO - Acertar os mappings da persistence de estoque.
+
+    public long getIDProduto() {
+        return IDProduto;
+    }
+
+    public void setIDProduto(long IDProduto) {
+        this.IDProduto = IDProduto;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getPreco() {
+        return preco;
+    }
+
+    public void setPreco(String preco) {
+        this.preco = preco;
+    }
+
+    public Estoque getEstoque() {
+        return estoque;
+    }
+
+    public void setEstoque(Estoque estoque) {
+        this.estoque = estoque;
+    }
+    
+   
 }
