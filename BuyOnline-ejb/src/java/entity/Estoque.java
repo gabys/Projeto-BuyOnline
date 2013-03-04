@@ -27,5 +27,38 @@ public class Estoque {
     
     @Column(length = 32)
     private int qtdEstoque;
+
+    public long getIDEstoque() {
+        return IDEstoque;
+    }
+
+    public void setIDEstoque(long IDEstoque) {
+        this.IDEstoque = IDEstoque;
+    }
+
+    public Produto getProduto() {
+        return produto;
+    }
+
+    public void setProduto(Produto produto) {
+        this.produto = produto;
+    }
+
+    public Filial getFilial() {
+        return filial;
+    }
+
+    public void setFilial(Filial filial) {
+        this.filial = filial;
+    }
+
+    public int getQtdEstoque() {
+        return qtdEstoque;
+    }
+
+    public void setQtdEstoque(int qtdEstoque) {
+        this.qtdEstoque = qtdEstoque;
+    }
+    
     
 }

@@ -20,6 +20,22 @@ public class Carrinho {
     
     @OneToMany(mappedBy="", fetch=FetchType.EAGER)
     private Produto produto;
+
+    public long getIDCarrinho() {
+        return IDCarrinho;
+    }
+
+    public void setIDCarrinho(long IDCarrinho) {
+        this.IDCarrinho = IDCarrinho;
+    }
+
+    public Produto getProduto() {
+        return produto;
+    }
+
+    public void setProduto(Produto produto) {
+        this.produto = produto;
+    }
     
     
 }

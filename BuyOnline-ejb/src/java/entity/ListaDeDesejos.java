@@ -23,6 +23,30 @@ public class ListaDeDesejos {
     
     @OneToOne(mappedBy="", fetch=FetchType.EAGER)
     private Cliente cliente;
+
+    public long getIDListaDeDesejos() {
+        return IDListaDeDesejos;
+    }
+
+    public void setIDListaDeDesejos(long IDListaDeDesejos) {
+        this.IDListaDeDesejos = IDListaDeDesejos;
+    }
+
+    public Produto getProduto() {
+        return produto;
+    }
+
+    public void setProduto(Produto produto) {
+        this.produto = produto;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
     
     
     

@@ -26,5 +26,39 @@ public class Filial {
     
     @ManyToMany(mappedBy="", fetch=FetchType.EAGER)
     private Estoque estoque;
+
+    public long getIDProduto() {
+        return IDProduto;
+    }
+
+    public void setIDProduto(long IDProduto) {
+        this.IDProduto = IDProduto;
+    }
+
+    public int getCNPJ() {
+        return CNPJ;
+    }
+
+    public void setCNPJ(int CNPJ) {
+        this.CNPJ = CNPJ;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public Estoque getEstoque() {
+        return estoque;
+    }
+
+    public void setEstoque(Estoque estoque) {
+        this.estoque = estoque;
+    }
     
+    
+   
 }
