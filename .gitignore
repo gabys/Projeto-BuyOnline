@@ -1,3 +1,6 @@
 /BuyOnline-ejb/dist/
 /BuyOnline-ejb/build/
 /BuyOnline-war/build/
+/nbproject/private/
+/BuyOnline-war/nbproject/private/
+/BuyOnline-ejb/nbproject/private/
