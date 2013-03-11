@@ -11,11 +11,6 @@ public class Produto {
     @Id
     @GeneratedValue(generator = "PRODUTO_SEQ")
     @SequenceGenerator(name = "PRODUTO_SEQ", allocationSize = 1)
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.88DF4BD6-A8DD-AADA-18F8-6388D509F76E]
-    // </editor-fold> 
-    private Estoque estoque;
     private long idProduto;
     @Column(length = 32)
     private String descricao;
@@ -44,18 +39,5 @@ public class Produto {
 
     public void setPreco(String preco) {
         this.preco = preco;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.38689735-9BEA-624C-5475-C3C6542E1A7A]
-    // </editor-fold> 
-    public Estoque getEstoque () {
-        return null;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.2DF505C1-4F44-EE09-9C50-F04500DBAC38]
-    // </editor-fold> 
-    public void setEstoque (Estoque estoque) {
     }
 }

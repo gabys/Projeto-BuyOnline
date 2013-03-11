@@ -6,6 +6,10 @@ package entity;
 
 import javax.persistence.*;
 
+/**
+ *
+ * @author GFactory
+ */
 public class Endereco {
 
     @Id

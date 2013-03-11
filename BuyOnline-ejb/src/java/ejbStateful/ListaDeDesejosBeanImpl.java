@@ -4,23 +4,23 @@
  */
 package ejbStateful;
 
-import entity.Carrinho;
 import entity.Cliente;
+import entity.ListaDeDesejos;
 import entity.Produto;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CarrinhoBeanImpl implements CarrinhoBean {
+public class ListaDeDesejosBeanImpl implements ListaDeDesejosBean {
 
     public List<Produto> listaProduto = new ArrayList<Produto>();
 
     @Override
-    public Carrinho buscar(long id) {
+    public ListaDeDesejos buscar(long id) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
-    public Cliente buscarCliente(Carrinho carrinho) {
+    public Cliente buscarCliente(ListaDeDesejos listaDeDesejos) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

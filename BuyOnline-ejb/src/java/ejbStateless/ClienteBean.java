@@ -3,15 +3,30 @@
  * and open the template in the editor.
  */
 package ejbStateless;
-import entity.*;
-import java.util.ArrayList;
+
+import entity.Carrinho;
+import entity.Cliente;
+import entity.Endereco;
+import entity.ListaDeDesejos;
 import java.util.List;
-import java.util.Map;
-import javax.ejb.Remote;
+
 /**
  *
  * @author GFactory
  */
-public class ClienteBean {
-    
+public interface ClienteBean {
+
+    public Cliente buscar(long id);
+
+    public List<Cliente> buscar();
+
+    public Cliente editar(Cliente cliente);
+
+    public Boolean criar(Cliente cliente);
+
+    public Carrinho buscarCarrinho(Cliente cliente);
+
+    public ListaDeDesejos buscarListaDeDesejos(Cliente cliente);
+
+    public Endereco buscarEndereco(Cliente cliente);
 }

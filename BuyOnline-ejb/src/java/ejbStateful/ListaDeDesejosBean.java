@@ -4,20 +4,21 @@
  */
 package ejbStateful;
 
-import entity.Carrinho;
 import entity.Cliente;
+import entity.ListaDeDesejos;
 import entity.Produto;
 import java.util.List;
 
-public interface CarrinhoBean {
 
-    public Carrinho buscar(long id);
+public interface ListaDeDesejosBean {
 
-    public Cliente buscarCliente(Carrinho carrinho);
+    public ListaDeDesejos buscar(long id);
+
+    public Cliente buscarCliente(ListaDeDesejos listaDeDesejos);
 
     public void adicionarProduto(Produto produto);
 
     public void removerProduto(Produto produto);
-
+    
     public List<Produto> getProduto();
 }

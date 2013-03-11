@@ -4,6 +4,7 @@
  */
 package entity;
 
+import ejbStateful.ListaDeDesejosBean;
 import javax.persistence.*;
 
 public class Cliente {
@@ -11,7 +12,6 @@ public class Cliente {
     @Id
     @GeneratedValue(generator = "CLIENTE_SEQ")
     @SequenceGenerator(name = "CLIENTE_SEQ", allocationSize = 1)
-
     private long idCliente;
     @Column(length = 32)
     private String nome;

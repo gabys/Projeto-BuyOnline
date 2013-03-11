@@ -4,10 +4,16 @@
  */
 package ejbStateless;
 
-/**
- *
- * @author GFactory
- */
-public class ProdutoBean {
-    
+import entity.Produto;
+import java.util.List;
+
+public interface ProdutoBean {
+
+    public Produto buscar(long id);
+
+    public List<Produto> buscar();
+
+    public Produto editar(Produto produto);
+
+    public Boolean criar(Produto produto);
 }
